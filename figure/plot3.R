@@ -1,9 +1,8 @@
 getwd()
 setwd("C://Users//Owner//DataJazz//ExData_Plotting1//figure")
 data<-read.table("household_power_consumption.txt",strip.white=TRUE,stringsAsFactors=FALSE,skip=1,sep=";",col.names=c("Date","Time","GlobalActivePower",
-                                                                                                                      "GlobalReactivePower","Voltage","GlobalIntensity","Submetering1","Submetering2","Submetering3"))
-col.names=c("Date","Time","GlobalActivePower","GlobalReactivePower","Voltage","GlobalIntensity","Submetering1","Submetering2","Submetering3")
-)
+                                                 "GlobalReactivePower","Voltage","GlobalIntensity","Submetering1","Submetering2","Submetering3"))
+
 
 test<-data[which(data$Date=="1/2/2007"|data$Date=="2/2/2007"),]
 Date <- as.Date(test$Date, format = "%d/%m/%Y") 
